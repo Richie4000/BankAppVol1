@@ -11,6 +11,7 @@ public class BankApp {
 
         if (password.equals(getPassword)) {
             System.out.println("You have been validated");
+            System.out.println("Welcome to the banking app " + getUsername);
         }
         else {
             System.out.println("Access denied");
@@ -27,8 +28,6 @@ public class BankApp {
             System.out.println("Enter a username");
             username = u.nextLine();
         }
-
-        System.out.println("Welcome to the banking app " + username);
 
         return username;
     }
